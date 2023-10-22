@@ -209,7 +209,7 @@ header nav .nav-links li:hover::after{
 .work-session-box{
     background-color: var(--dark-secondary);
     padding: 30px;
-    max-width: 300px;
+    min-width: 300px;
     text-align: left;
     border-radius: 10px;
     cursor: pointer;
@@ -230,17 +230,10 @@ header nav .nav-links li:hover::after{
 }
 .work-session-box-cont .work-box-title{
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 .work-session-box-cont p{
     color:  #b6b7b9;
-}
-.work-session-box a{
-    text-decoration: none;
-    color: var(--btn-hover);
-}
-.work-session-box a:hover{
-    color: var(--primary);
 }
 
 /* contact section */
