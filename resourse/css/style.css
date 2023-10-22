@@ -280,3 +280,7 @@ footer a{
     text-decoration: none;
     color: var(--primary);
 }
+footer a:hover{
+    color: var(--btn-hover);
+    text-decoration: underline;
+}
