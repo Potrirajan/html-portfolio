@@ -194,17 +194,17 @@ header nav .nav-links li:hover::after{
     color: var(--secondary);
     text-align: center;
 }
-.work-session-title{
+.session-title{
     font-weight: 900;
     font-size: 30px;
     margin-bottom: 20px;
 }
+.session-title > span{
+    color: var(--primary);
+}
 .work-session .work-session-area{
     display: flex;
     justify-content: center;
-}
-.work-session-title > span{
-    color: var(--primary);
 }
 .work-session-box{
     background-color: var(--dark-secondary);
@@ -243,4 +243,40 @@ header nav .nav-links li:hover::after{
     color: var(--primary);
 }
 
+/* contact section */
+.contact-section{
+    background-color: var(--dark-secondary);
+    color: var(--secondary);
+    padding: 30px 80px;
+    text-align: center;
+}
+.contact-section form input, textarea{
+    width: 450px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;    
+    font-size: 16px;
+    resize: none;
+    color: var(--secondary);
+    border: 3px solid #31bef66c;
+}
+.contact-section form input:focus, textarea:focus{
+    box-shadow: 0px 0px 15px #076b9284;
+}
 
+/* footer */
+
+footer{
+    background-color: var(--dark-primary);
+    color: #b6b7b9;
+    font-size: 14px;
+    padding: 20px 0px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: var(--primary);
+}
