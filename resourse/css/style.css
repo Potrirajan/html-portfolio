@@ -24,6 +24,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 header .logo a, header .logo a span{
     color: var(--secondary);
@@ -99,7 +103,7 @@ header nav .nav-links li:hover::after{
 
 .hero-section{
     background: linear-gradient(rgba(0, 0, 0, 0.482),rgba(0, 0, 0, 0.815)),url("http://i1.ytimg.com/vi/HPph35tdMP8/maxresdefault.jpg");
-    padding: 10px 80px;
+    padding: 50px 80px 10px;
     display: flex;
     align-items: center;
     color: var(--secondary);
@@ -284,4 +288,103 @@ footer a{
 footer a:hover{
     color: var(--btn-hover);
     text-decoration: underline;
+}
+
+
+/* media query */
+
+@media only screen and (max-width:600px){
+
+    /* header section */
+
+    header{
+        padding: 30px 20px 20px;
+        flex-direction: column;
+    }
+    header .logo{
+        margin-bottom: 15px;
+    }
+    header nav .nav-links li a{
+        font-size: 16px;
+    }
+    header button{
+        display: none;
+    }
+
+    /* hero section */
+
+    .hero-section{
+        padding: 210px 40px 10px;
+        flex-direction: column;
+    }
+    .hero-content-text{
+        margin-bottom: 40px;
+    }
+    .hero-content h4{
+        font-size:18px;
+        margin-bottom: 5px;
+    }
+    .hero-content .hero-heating{
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+    .hero-content .hero-content-text p{
+        font-size: 18px;
+    }
+    .hero-content .social-icons{
+        margin-bottom: 25px;
+    }
+    .hero-content .social-icons ul li a{
+        font-size: 28px;
+    }
+    .btn{
+        padding: 14px 24px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    /* about section */
+
+    .about-section{
+        padding: 30px 40px;
+        flex-direction: column;
+    }
+    .about-section img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about-section .about-content{
+        margin-left: 0px;
+    }
+    .about-section .about-content h2{
+        font-size: 36px;
+    }
+    .about-content ul li, a{
+        font-size: 18px;
+    }
+
+    /* technology */
+
+    .technology-session{
+        padding: 30px 40px;
+    }
+    .technology-session .technology-session-area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .technology-session-box{
+        min-width: 300px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    /* contact form */
+
+    .contact-section{
+        padding: 30px 40px;
+    }
+    .contact-section form input, textarea{
+        width: 100%;
+    }
+
 }
