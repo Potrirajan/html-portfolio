@@ -9,12 +9,14 @@
     --secondary:#fff;
     --btn-hover: #076b92;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+}
+html{
+    scroll-behavior: smooth;
 }
 header{
     background-color: var(--dark-primary);
@@ -186,9 +188,9 @@ header nav .nav-links li:hover::after{
     color: var(--secondary);
 }
 
-/* work session */
+/* technology session */
 
-.work-session{
+.technology-session{
     background-color: var(--dark-primary);
     padding: 30px 80px;
     color: var(--secondary);
@@ -202,11 +204,11 @@ header nav .nav-links li:hover::after{
 .session-title > span{
     color: var(--primary);
 }
-.work-session .work-session-area{
+.technology-session .technology-session-area{
     display: flex;
     justify-content: center;
 }
-.work-session-box{
+.technology-session-box{
     background-color: var(--dark-secondary);
     padding: 30px;
     min-width: 300px;
@@ -216,24 +218,30 @@ header nav .nav-links li:hover::after{
     margin-right: 20px;
     transition: 0.5s;
 }
-.work-session-box:hover{
+.technology-session-box:hover{
     background-color: #16191d;
 }
-.work-session-icon{
+.technology-session-icon{
     padding: 10px;
     background-color: var(--primary);
     border-radius: 5px ;
 }
-.work-session-box-cont{
+.technology-session-box-cont{
     margin-top: 20px;
-    margin-bottom: 10px;
 }
-.work-session-box-cont .work-box-title{
+.technology-session-box-cont .technology-box-title{
     font-weight: 900;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
-.work-session-box-cont p{
+.technology-session-box-cont p{
     color:  #b6b7b9;
+}
+.technology-session-box a{
+    text-decoration: none;
+    color: var(--btn-hover);
+}
+.technology-session-box a:hover{
+    color: var(--primary);
 }
 
 /* contact section */
