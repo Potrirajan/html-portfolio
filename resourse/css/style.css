@@ -20,7 +20,7 @@ html{
 }
 header{
     background-color: var(--dark-primary);
-    padding: 10px 80px;
+    padding: 10px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,10 +109,11 @@ header .nav-btn{
 
 .hero-section{
     background: linear-gradient(rgba(0, 0, 0, 0.482),rgba(0, 0, 0, 0.815)),url("http://i1.ytimg.com/vi/HPph35tdMP8/maxresdefault.jpg");
-    padding: 50px 80px 10px;
+    padding: 50px 80px;
     display: flex;
     align-items: center;
     color: var(--secondary);
+    overflow: hidden;
 }
 .hero-content-text{
     margin-bottom: 20px;
@@ -217,6 +218,7 @@ header .nav-btn{
 .technology-session .technology-session-area{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .technology-session-box{
     background-color: var(--dark-secondary);
@@ -227,6 +229,7 @@ header .nav-btn{
     cursor: pointer;
     margin-right: 20px;
     transition: 0.5s;
+    margin-bottom: 20px;
 }
 .technology-session-box:hover{
     background-color: #16191d;
@@ -304,30 +307,37 @@ footer a:hover{
     /* header section */
 
     header{
-        padding: 30px 20px 20px;
+        padding: 30px 40px;
     }
     header .logo{
         margin-bottom: 15px;
     }
     header nav .nav-links{
-        position: fixed;
+        position: absolute;
         height: 100vh;
-        width: 0px;
+        width: 300px;
         background: var(--dark-primary);
         top: 109px;
-        right: 0;
-        text-align: center;
+        right: -300px;
+        text-align: left;
         z-index: 2;
-        padding: 25px 15px;
+        padding-top: 50px;
+        padding-left: 20px;
+        transition: 0.5s;
+    }
+    header nav .hide{
+        right:  0px;
+        transition: 0.5s;
     }
     header nav .nav-links li{
         display: block;
+        margin: 0;
         padding: 6px 8px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         
     }
     header nav .nav-links li a{
-        font-size: 20px;
+        font-size: 24px;
     }
     header button{
         display: none;
