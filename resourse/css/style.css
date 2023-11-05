@@ -249,17 +249,102 @@ header .nav-btn{
 .technology-session-box-cont p{
     color:  #b6b7b9;
 }
-.technology-session-box a{
+/* .technology-session-box a{
     text-decoration: none;
     color: var(--btn-hover);
 }
 .technology-session-box a:hover{
     color: var(--primary);
+} */
+
+/* project section */
+
+.project-session{
+    background-color: var(--dark-secondary);
+    padding: 30px 80px;
+    color: var(--secondary);
+    text-align: center;
 }
+.project-session-box{
+    background-color: var(--dark-primary);
+    padding: 30px;
+    max-width: 300px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.project-session-box:hover{
+    transform: translateY(-5px);
+}
+.project-session-box-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.project-session-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+
+}
+.project-session .project-session-area{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-session-area a{
+    text-decoration: none;
+    color: none;
+}
+.project-box-title{
+    font-weight: 900;
+    color: var(--secondary);
+    margin-bottom: 2px;
+}
+.project-session-box-cont p{
+    color:  #b6b7b9;
+    margin-bottom: 15px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.project-session-box-cont .visit-btn{
+    padding: 3px 20px;
+    border: 1px solid #12bdff;
+    border-radius: 5px;
+    color: var(--primary);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: fit-content;
+}
+.project-session-box-cont .visit-btn a{
+    text-decoration: none;
+    color: var(--primary);
+    text-align: center;
+    margin-right: 4px;
+}
+.project-session-box-cont .visit-btn:hover{
+    background-color: var(--primary);
+    color: var(--dark-primary);
+}
+.project-session-box-cont .visit-btn:hover a{
+    color: var(--dark-primary);
+}
+
+
+
+
 
 /* contact section */
 .contact-section{
-    background-color: var(--dark-secondary);
+    background-color: var(--dark-primary);
     color: var(--secondary);
     padding: 30px 80px;
     text-align: center;
@@ -284,7 +369,7 @@ header .nav-btn{
 /* footer */
 
 footer{
-    background-color: var(--dark-primary);
+    background-color: var(--dark-secondary);
     color: #b6b7b9;
     font-size: 14px;
     padding: 20px 0px;
@@ -415,6 +500,22 @@ footer a:hover{
         margin-bottom: 20px;
     }
 
+        /* project */
+
+        .project-session{
+            padding: 30px 40px;
+        }
+        .project-session .project-session-area{
+            flex-direction: column;
+            align-items: center;
+        }
+        .project-session-box{
+            min-width: 100%;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+
+
     /* contact form */
 
     .contact-section{
@@ -424,4 +525,20 @@ footer a:hover{
         width: 100%;
     }
 
+}
+@media only screen and (max-width:800px){
+        /* about section */
+
+        .about-section{
+            padding: 30px 20px;
+        }
+        .about-section .about-content{
+            margin-left: 30px;
+        }
+        .about-section .about-content h2{
+            font-size: 36px;
+        }
+        .about-content ul li, a{
+            font-size: 18px;
+        }
 }
